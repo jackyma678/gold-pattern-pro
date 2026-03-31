@@ -1,6 +1,6 @@
 # 黄金形态通APP - 黄金行情博客
 
-本仓库通过 GitHub Actions 每 15 分钟更新一篇黄金（XAU/USD）行情分析，并发布到 GitHub Pages。
+本仓库通过 GitHub 更新黄金（XAU/USD）行情分析，并发布到 GitHub Pages。
 
 - **站点入口**：https://gold-pattern-pro.github.io/gold-article/
 - **文章归档**：https://gold-pattern-pro.github.io/gold-article/archive/
@@ -12,7 +12,7 @@
 - **最新文章**：`_posts/2026-03-31-0637-黄金价格高位震荡技术形态突破在即深度行情前瞻.md`
 - 文章存放目录：`_posts/`
 - 生成脚本：`daily_gold_analysis.py`
-- 定时任务：`.github/workflows/daily_run.yml`（每 15 分钟）
+- 定时任务：`.github/workflows/daily_run.yml
 - Pages 发布：`.github/workflows/pages.yml`
 
 ## 关于黄金形态通APP
