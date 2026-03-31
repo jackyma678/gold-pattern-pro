@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gold-pattern-pro.github.io/gold-article/sitemap.xml

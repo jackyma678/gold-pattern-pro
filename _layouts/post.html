@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-meta">
+    <span>{{ page.date | date: "%Y-%m-%d %H:%M UTC" }}</span>
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+<div class="post-nav">
+  {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">← 上一篇</a>{% endif %}
+  {% if page.next %}<a style="float:right" href="{{ page.next.url | relative_url }}">下一篇 →</a>{% endif %}
+</div>

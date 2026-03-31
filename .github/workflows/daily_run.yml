@@ -2,7 +2,7 @@ name: Daily Gold Analysis
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -32,8 +32,8 @@ jobs:
 
       - name: Commit and Push changes
         run: |
-          git config --global user.name "jackyma678-bot"
-          git config --global user.email "jackyma678@users.noreply.github.com"
-          git add README.md
-          git commit -m "Update daily analysis with Gemini 3.1 [skip ci]" || echo "No changes to commit"
+          git config --global user.name "gold-pattern-pro-bot"
+          git config --global user.email "gold-pattern-pro@users.noreply.github.com"
+          git add README.md _posts/
+          git commit -m "Add new gold article" || echo "No changes to commit"
           git push origin main
