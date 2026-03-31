@@ -1,10 +1,14 @@
 title: "黄金形态通APP - 黄金行情博客"
-description: "每 15 分钟更新：黄金（XAU/USD）K线形态与技术面解读。"
+description: "工作日每小时更新：黄金（XAU/USD）K线形态与技术面解读。"
 lang: zh-CN
 timezone: UTC
 
 url: "https://gold-pattern-pro.github.io"
 baseurl: "/gold-article"
+
+exclude:
+  - automation
+  - social
 
 permalink: /posts/:year/:month/:day/:title/
 
