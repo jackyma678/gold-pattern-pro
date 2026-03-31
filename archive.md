@@ -7,18 +7,15 @@ permalink: /archive/
 
 ## 文章归档
 
-{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
-{% for year in posts_by_year %}
-### {{ year.name }}
+{% assign sorted_posts = site.posts | sort: "date" | reverse %}
 
-{% assign posts_by_month = year.items | group_by_exp: "post", "post.date | date: '%m'" %}
-{% for month in posts_by_month %}
-#### {{ month.name }} 月
+共 **{{ sorted_posts.size }}** 篇。
 
-{% for post in month.items %}
-- [{{ post.title }}]({{ post.url | relative_url }})（{{ post.date | date: "%Y-%m-%d %H:%M UTC" }}）
+<ul class="archive-list">
+{% for post in sorted_posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="archive-meta">（{{ post.date | date: "%Y-%m-%d %H:%M UTC" }}）</span>
+  </li>
 {% endfor %}
-
-{% endfor %}
-
-{% endfor %}
+</ul>
