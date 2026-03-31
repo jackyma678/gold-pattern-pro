@@ -356,7 +356,7 @@ def run_analysis():
 
         readme = (
             "# 黄金形态通APP - 黄金行情博客\n\n"
-            "本仓库通过 GitHub Actions 在工作日每小时更新一篇黄金（XAU/USD）行情分析，并发布到 GitHub Pages。\n\n"
+            "本仓库通过 GitHub 更新黄金（XAU/USD）行情分析，并发布到 GitHub Pages。\n\n"
             f"- **站点入口**：{site_url}\n"
             f"- **文章归档**：{site_url.rstrip('/')}/archive/\n"
             f"- **站点地图**：{site_url.rstrip('/')}/sitemap.xml\n"
@@ -367,7 +367,7 @@ def run_analysis():
             "- **运行健康**：`automation/health.json`\n"
             "- 文章存放目录：`_posts/`\n"
             "- 生成脚本：`daily_gold_analysis.py`\n"
-            "- 定时任务：`.github/workflows/daily_run.yml`（工作日每小时）\n"
+            "- 定时任务：`.github/workflows/daily_run.yml`\n"
             "- Pages 发布：`.github/workflows/pages.yml`\n\n"
             "## 关于黄金形态通APP\n\n"
             "**黄金形态通APP** 是一款专注于黄金交易的技术分析工具，支持 K 线形态智能识别、实时行情预警。\n\n"
