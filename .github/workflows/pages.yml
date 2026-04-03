@@ -1,5 +1,7 @@
 name: Deploy GitHub Pages
 
+# 人工或通过 PAT 推送仓库时会触发；机器人用 GITHUB_TOKEN 的 push 不会触发本 workflow，
+# 定时发文在「Daily Gold Analysis」workflow 末尾已内嵌构建与部署。
 on:
   push:
     branches: ["main"]
